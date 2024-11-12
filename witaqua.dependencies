@@ -1,0 +1,7 @@
+[
+  {
+    "repository": "hardware_oplus",
+    "target_path": "hardware/oplus",
+    "branch": "14.0-lunaa"
+  }
+]
