@@ -66,6 +66,7 @@ function blob_fixup() {
     case "${1}" in
         odm/bin/hw/android.hardware.ir-service.oplus)
             "${PATCHELF}" --replace-needed "android.hardware.ir-V1-ndk_platform.so" "android.hardware.ir-V1-ndk.so" "${2}"
+            ;;
         odm/bin/hw/vendor.pixelworks.hardware.display.iris-service)
             grep -q "libprocessgroup.so" "${2}" || "${PATCHELF}" --add-needed "libprocessgroup.so" "${2}"
             ;;
